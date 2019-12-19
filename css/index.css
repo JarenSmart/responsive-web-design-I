@@ -316,7 +316,7 @@ button {
 
   .middle-section {
     margin-top: 1px;
-    margin-bottom: 1px;
+    margin-bottom: 50px;
   }
 
   .left-section {
@@ -325,7 +325,7 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 40vh;
+    height: 25vh;
     width: 80%;
   }
 
@@ -336,14 +336,14 @@ button {
 
 @media (max-width: 500px) {
   .navparent {
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
   }
 
   .logo {
-    padding: 0px 0px;
+    padding: 10px;
     margin: 0px;
   }
 
@@ -352,7 +352,7 @@ button {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 35vh;
+    height: 42vh;
   }
 
   nav a {
