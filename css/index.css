@@ -291,7 +291,100 @@ button {
   text-align: center;
 }
 
+/* START OF SERVICES.HTML */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.navservices {
+  display: flex;
+}
+
+#servicesnav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#servicesnav a {
+  width: 100%;
+  padding: 2%;
+}
+
+.servicessection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+.services-header-img {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+}
+
+.main-box-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding-top: 30px;
+}
+
+.box {
+  background-color: rgb(240, 240, 240);
+  width: 48%;
+  height: auto;
+  margin-bottom: 35px;
+  padding: 25px;
+  border: 1.5px solid black;
+}
+
+.learn-more-button {
+  background-color: white;
+  font-size: 11px;
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+  border: 1.5px solid black;
+}
+
+.learn-more-button:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+.bottom-services {
+  border-top: 3px solid black;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+  padding-bottom: 45px;
+}
+
+.service-facts {
+  width: 400px;
+}
+
+/* END OF SERVICES*/
+
 @media (max-width: 800px) {
+  .navservices {
+    height: 15vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   .navparent {
     height: 20vh;
     display: flex;
@@ -301,13 +394,25 @@ button {
   }
 
   .logo {
-    margin: 2%;
+    margin: 5px;
   }
 
   nav {
     height: 8vh;
     display: flex;
     justify-content: space-between;
+  }
+
+  #servicesnav a {
+    height: 8vh;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .services-header-img {
+    width: 100%;
   }
 
   .circle {
@@ -325,17 +430,39 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 25vh;
+    height: 40vh;
     width: 80%;
   }
 
   .left-section h1 {
     align-items: center;
   }
+
+  .bottom-services {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .service-facts {
+    margin: 4%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px) {
+  .container {
+    max-width: 1000px;
+  }
+
   .navparent {
+    height: 50vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .navservices {
     height: 50vh;
     display: flex;
     flex-direction: column-reverse;
@@ -355,9 +482,28 @@ button {
     height: 42vh;
   }
 
+  #servicesnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 42vh;
+    width: 100%;
+  }
+
   nav a {
     margin: 0.01px;
     padding: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  #servicesnav a {
+    text-align: center;
+    font-size: 25px;
+    margin: 0.01px;
+    padding: 10px;
+    padding-top: 5px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
   }
@@ -368,6 +514,24 @@ button {
 
   .left-section {
     width: 68%;
+  }
+
+  .servicessection {
+    padding-top: 35px;
+    width: 100%;
+    border-bottom: 3px solid black;
+  }
+
+  .main-box-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
   }
 
   .top-section {
@@ -386,6 +550,35 @@ button {
   .about {
     padding: 10px;
     margin-top: 20px;
+  }
+
+  .bottom-services {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+
+  .services-info-img,
+  .service-facts {
+    align-items: center;
+    width: 90%;
+  }
+
+  .service-facts {
+    margin: 5%;
+    margin-top: 30px;
+    padding-top: 10px;
+  }
+
+  ul {
+    padding: 20px;
+  }
+
+  li {
+    color: dodgerblue;
+    text-decoration: underline;
   }
 
   .bottom-section {
